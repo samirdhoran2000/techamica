@@ -130,9 +130,10 @@ const RefundPolicy = () => {
           <p className="font-medium">Processing Time</p>
         </div>
         <p className="text-gray-600 pl-6">
-          Please note that all refund requests are reviewed within 3 business
-          days. If approved, refunds will be processed within 7-10 business
-          days, depending on your payment method.
+          Refund requests are typically reviewed within 3 business days, and if
+          approved, refunds are generally issued within 7-10 business days.
+          Please note that actual issuance times may vary based on your payment
+          method and external factors beyond our control.
         </p>
       </div>
 
