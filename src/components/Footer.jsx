@@ -17,8 +17,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white px-4 md:px-16 py-8 md:py-12" id="about">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer
+      className=" bg-gray-900 text-white px-4 md:px-20 py-8 md:py-12"
+      id="about"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  mx-auto">
         <div>
           <h3 className="font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm md:text-base">
@@ -48,16 +51,16 @@ const Footer = () => {
           <h3 className="font-bold mb-4">Services</h3>
           <ul className="space-y-2 text-sm md:text-base">
             <li>
-              <Link to="/commingsoon">Custom Web Development</Link>
+              <a href="/#services">Custom Web Development</a>
             </li>
             <li>
-              <Link to="/commingsoon">UI/UX Design</Link>
+              <a href="/#services">UI/UX Design</a>
             </li>
             <li>
-              <Link to="/commingsoon">E-commerce Development</Link>
+              <a href="/#services">E-commerce Development</a>
             </li>
             <li>
-              <Link to="/commingsoon">Web App Development</Link>
+              <a href="/#services">Web App Development</a>
             </li>
           </ul>
         </div>
@@ -80,22 +83,24 @@ const Footer = () => {
           <h3 className="font-bold mb-4">Legal & Policies</h3>
           <ul className="space-y-2 text-sm md:text-base">
             <li>
-              <Link to="/commingsoon">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
             <li>
-              <Link to="/commingsoon">Terms & Conditions</Link>
+              <Link to="/term-condition">Terms & Conditions</Link>
             </li>
             <li>
-              <Link to="/commingsoon">Refund Policy</Link>
+              <Link to="/refund-policy">Refund Policy</Link>
             </li>
             <li>
-              <Link to="/commingsoon">Cookie Policy</Link>
+              <Link to="/pricing">Pricing</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="mt-8 md:mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-        <p className="text-sm text-gray-400">Tech Amica © 2025 All rights reserved</p>
+        <p className="text-sm text-gray-400">
+          Tech Amica © 2025 All rights reserved
+        </p>
         <div className="flex space-x-4">
           <a
             href="https://www.facebook.com/profile.php?id=61556388266304"
@@ -113,10 +118,13 @@ const Footer = () => {
           >
             <Linkedin size={24} />
           </a>
-          <a href="/commingsoon"target="_blank"
-            rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          <a
+            href="/commingsoon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white"
+          >
             <Twitter size={24} />
-            
           </a>
           <a
             href="https://www.instagram.com/invites/contact/?i=y2g5u5sly94a&utm_content=tmb1mkp"

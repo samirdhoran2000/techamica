@@ -17,6 +17,7 @@ import Footer from "./Footer";
 import Cta from "./Cta";
 import Team from "./Team";
 import Services from "./Services";
+import ContactForm from "./ContactUs";
 
 const WebAgencySite = () => {
 
@@ -38,13 +39,16 @@ const WebAgencySite = () => {
       <Services />
 
       {/* Team Section */}
-     <Team />
+      <Team />
+      
+      {/* Contact Section */}
+      <ContactForm />
 
       {/* CTA Section */}
     <Cta />
 
       {/* Footer */}
-     <Footer />
+     {/* <Footer /> */}
     </div>
   );
 };

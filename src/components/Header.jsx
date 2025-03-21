@@ -16,12 +16,12 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", path: "#home" },
-    { label: "Services", path: "#services" },
-    { label: "Portfolio", path: "#portfolio" },
-    { label: "About Us", path: "#about" },
-    { label: "Blog", path: "/" },
-    { label: "Contact", path: "#about" },
+    { label: "Home", path: "/#home" },
+    { label: "Services", path: "/#services" },
+    // { label: "Portfolio", path: "/#portfolio" },
+    { label: "About Us", path: "/#about" },
+    { label: "Pricing", path: "/pricing" },
+    { label: "Contact", path: "/contact-us" },
   ];
 
   return (
@@ -54,7 +54,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <ul className="flex space-x-6">
               {navItems.map((item) => (
-                <li key={item.label}>
+                <li key={item.label} >
                   <a
                     href={item.path}
                     className="text-black hover:text-white transition-colors"
@@ -64,9 +64,12 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <button className="px-4 py-2 bg-black text-white font-semibold rounded-md hover:bg-white hover:text-black transition-colors">
+            <Link
+              to={"/contact-us"}
+              className="px-4 py-2 bg-black text-white font-semibold rounded-md hover:bg-white hover:text-black transition-colors"
+            >
               Get a Quote
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,12 +101,12 @@ const Header = () => {
                 </li>
               ))}
               <li className="pt-4 border-t border-gray-700">
-                <button
+                <Link to={"/contact-us"}
                   className="w-full px-4 py-2 bg-white text-black font-semibold rounded-md transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Get a Quote
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
